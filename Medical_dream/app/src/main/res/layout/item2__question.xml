@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    app:cardBackgroundColor="@android:color/white"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="@dimen/dp_8"
+    app:contentPadding="@dimen/dp_8"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:id="@+id/rlv__question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tv_title_question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="内科学"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_22"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+        <TextView
+            android:id="@+id/tv_desc_question"
+            android:layout_below="@+id/tv_title_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="内科学"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <TextView
+            android:id="@+id/tv_start_question"
+            android:layout_below="@+id/tv_desc_question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始做题"
+            android:textColor="@android:color/holo_blue_bright"
+            android:textSize="@dimen/sp_15"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginLeft="@dimen/dp_10"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/wodepinglun"
+            />
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
