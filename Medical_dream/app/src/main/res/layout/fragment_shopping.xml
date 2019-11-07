@@ -27,7 +27,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src=""
+                android:src="@drawable/beijing_shouye"
                 />
             <TextView
                 android:layout_width="wrap_content"

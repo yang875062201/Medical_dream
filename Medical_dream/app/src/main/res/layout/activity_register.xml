@@ -29,7 +29,6 @@
     <LinearLayout
         android:paddingLeft="@dimen/dp_40"
         android:paddingRight="@dimen/dp_40"
-        android:layout_below="@id/toolbar"
         android:layout_marginTop="@dimen/dp_100"
         android:id="@+id/ll_quick"
         android:orientation="vertical"
