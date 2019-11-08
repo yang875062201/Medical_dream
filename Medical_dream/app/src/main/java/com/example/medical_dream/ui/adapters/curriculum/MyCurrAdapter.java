@@ -78,7 +78,7 @@ public class MyCurrAdapter extends RecyclerView.Adapter {
             viewHolder1.title.setText(kecheng.get(i-2).getName());
             StringBuffer sb = new StringBuffer();
             for (int j = 0; j <kecheng.get(i-2).getType_str().size() ; j++) {
-               sb.append(kecheng.get(i-2).getType_str().get(j)+"");
+               sb.append(kecheng.get(i-2).getType_str().get(j)+"  ");
             }
             viewHolder1.desc.setText(sb);
         }

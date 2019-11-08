@@ -34,7 +34,7 @@
            android:layout_toRightOf="@id/iv_curr"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:src="@mipmap/add_channels_close"
+           android:src="@drawable/icon_time"
            />
        <TextView
            android:id="@+id/time_curr"
