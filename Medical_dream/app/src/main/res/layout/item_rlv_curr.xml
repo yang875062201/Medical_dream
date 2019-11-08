@@ -11,11 +11,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
    <RelativeLayout
        android:layout_width="match_parent"
-       android:layout_height="wrap_content">
+       android:layout_height="@dimen/dp_120">
        <ImageView
            android:id="@+id/iv_curr"
-           android:layout_width="@dimen/dp_80"
-           android:layout_height="@dimen/dp_70"
+           android:layout_width="@dimen/dp_90"
+           android:layout_height="match_parent"
+           android:scaleType="fitXY"
+           />
+       <ImageView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:layout_marginLeft="@dimen/dp_50"
+           android:src="@drawable/class1_nor"
            />
        <TextView
            android:id="@+id/title_curr"
@@ -34,7 +42,7 @@
            android:layout_toRightOf="@id/iv_curr"
            android:layout_width="wrap_content"
            android:layout_height="wrap_content"
-           android:src="@drawable/icon_time"
+           android:src="@drawable/icon_keshi"
            />
        <TextView
            android:id="@+id/time_curr"
