@@ -224,7 +224,8 @@ public class LoginActivity extends BaseActivity<LoginContract.LoginView,
             default:
                 break;
             case R.id.iv_back:
-                finish();
+               
+                startActivity(new Intent(LoginActivity.this,MainActivity.class));
                 break;
             case R.id.tv_quick_login:
                 mLlQuick.setVisibility(View.VISIBLE);
