@@ -1,11 +1,18 @@
 package com.example.medical_dream.http;
 
+import com.example.medical_dream.bean.currculumBean.CurriculumBean;
+import com.example.medical_dream.bean.forum.ExperienceBean;
+import com.example.medical_dream.bean.forum.OfficialBean;
+import com.example.medical_dream.bean.forum.SchoolRlv;
+import com.example.medical_dream.bean.forum.SchoolTab;
 import com.example.medical_dream.bean.login.regiter.LoginBean;
 import com.example.medical_dream.bean.login.regiter.AuthCodeBean;
 import com.example.medical_dream.bean.login.regiter.FindPassBean;
 import com.example.medical_dream.bean.login.regiter.RegisterBean;
 import com.example.medical_dream.bean.question.DaysBean;
 import com.example.medical_dream.bean.question.TikuBean;
+import com.example.medical_dream.bean.shopping.AllBean;
+import com.example.medical_dream.bean.shopping.BookBean;
 
 import io.reactivex.Observable;
 import retrofit2.http.Field;
@@ -52,4 +59,53 @@ public interface ApiServer {
     //https://app.yiyanmeng.com/index.php/
     @GET("Shiti/ti_type_list")
     Observable<TikuBean> getTiku(@Header("A-uthorization")String header);
+
+    //未写
+
+
+    //question 签到
+    //https://app.yiyanmeng.com/index.php/signin/signin_add
+    @GET("signin/signin_add")
+    Observable<TikuBean> getSignin(@Header("A-uthorization")String header);
+
+    //shopping
+    //全部
+    @POST("shop/get_shop_and_vedio_list")
+    @FormUrlEncoded
+    Observable<AllBean> getAll(@Header("A-uthorization")String header,@Field("start")String start,@Field("end")String end);
+    //图书
+    @POST("shop/get_shop_list")
+    @FormUrlEncoded
+    Observable<BookBean> getBook(@Header("A-uthorization")String header, @Field("p")String p);
+    //课程
+    @POST("kecheng/ke_index_list")
+    @FormUrlEncoded
+    Observable<AllBean> getCourse(@Header("A-uthorization")String header,@Field("p")String p);
+
+    //Curriculum
+    @POST("kecheng/ke_index_list")
+    @FormUrlEncoded
+    Observable<CurriculumBean> getCurriculum(@Header("A-uthorization")String header, @Field("type")String type,@Field("p")String p);
+
+
+    //Forum
+    // tab学校
+    @POST("forumsc/type_select")
+    @FormUrlEncoded
+    Observable<SchoolTab> getSchoolTab(@Header("A-uthorization")String header, @Field("p")String p);
+    // rlv学校
+    @POST("forumsc/article_select")
+    @FormUrlEncoded
+    Observable<SchoolRlv> getSchoolRlv(@Header("A-uthorization")String header, @Field("id")String id, @Field("p")String p);
+
+    //官方论坛
+    @POST("forum/official_index")
+    @FormUrlEncoded
+    Observable<OfficialBean> getOffcial(@Header("A-uthorization")String header, @Field("p")String p);
+    //经验论坛
+    // forumjy/forum_jy_index
+    @POST("forumjy/forum_jy_index")
+    @FormUrlEncoded
+    Observable<ExperienceBean> getExperience(@Header("A-uthorization")String header, @Field("p")String p);
+
 }
