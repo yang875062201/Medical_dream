@@ -3,7 +3,7 @@ package com.example.medical_dream.base;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 
-public abstract  class BaseFragment<V,P extends BasePersenter<V>> extends  SimpleFragment{
+public abstract  class BaseFragment<V,P extends BasePersenter<V>> extends SimpleFragment{
 
     public P mPersenter;
 
