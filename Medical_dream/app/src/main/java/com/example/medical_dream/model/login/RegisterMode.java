@@ -24,6 +24,7 @@ public class RegisterMode implements RegisterContract.RegisterModuel{
 
                     @Override
                     public void onFail(String error) {
+
                         Logger.log("13233",error);
                     }
                 });

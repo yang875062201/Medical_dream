@@ -17,7 +17,7 @@ import android.content.SharedPreferences;
  * 7 boolean isFirstVideo  是否播放宣传视频
  */
 
-public class  SharedPrefrenceUtils{
+public class SharedPrefrenceUtils{
 
     public static String NAME = "LoanThrough";
 
