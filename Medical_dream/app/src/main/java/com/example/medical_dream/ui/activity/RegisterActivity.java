@@ -1,5 +1,6 @@
 package com.example.medical_dream.ui.activity;
 
+import android.content.Intent;
 import android.os.Handler;
 import android.os.Message;
 import android.text.TextUtils;
