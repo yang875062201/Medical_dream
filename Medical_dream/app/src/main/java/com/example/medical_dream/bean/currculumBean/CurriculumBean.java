@@ -92,6 +92,21 @@ public class CurriculumBean {
             private String price_status;
             private List<String> type_str;
 
+            @Override
+            public String toString() {
+                return "KechengBean{" +
+                        "id='" + id + '\'' +
+                        ", name='" + name + '\'' +
+                        ", class_hour='" + class_hour + '\'' +
+                        ", type='" + type + '\'' +
+                        ", pic='" + pic + '\'' +
+                        ", jia_ge='" + jia_ge + '\'' +
+                        ", yuan_jia_ge='" + yuan_jia_ge + '\'' +
+                        ", price_status='" + price_status + '\'' +
+                        ", type_str=" + type_str +
+                        '}';
+            }
+
             public String getId() {
                 return id;
             }
@@ -202,6 +217,15 @@ public class CurriculumBean {
         }
 
         public static class GongGaoBean {
+            @Override
+            public String toString() {
+                return "GongGaoBean{" +
+                        "id='" + id + '\'' +
+                        ", name='" + name + '\'' +
+                        ", url='" + url + '\'' +
+                        '}';
+            }
+
             /**
              * id : 5
              * name : 八月考研高端优惠活动
