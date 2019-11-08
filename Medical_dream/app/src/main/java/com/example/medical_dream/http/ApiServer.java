@@ -92,6 +92,7 @@ public interface ApiServer {
     // tab学校
     @POST("forumsc/type_select")
     @FormUrlEncoded
+
     Observable<SchoolTab> getSchoolTab(@Header("A-uthorization")String header, @Field("p")String p);
     // rlv学校
     @POST("forumsc/article_select")

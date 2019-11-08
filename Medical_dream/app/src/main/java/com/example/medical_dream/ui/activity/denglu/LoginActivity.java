@@ -258,6 +258,7 @@ public class LoginActivity extends BaseActivity<LoginContract.LoginView,
 
                 break;
             case R.id.tv_find_pass:
+
                 startActivity(new Intent(this, FindPassActivity.class));
                 break;
             //快速登录
@@ -270,6 +271,7 @@ public class LoginActivity extends BaseActivity<LoginContract.LoginView,
                 times1 = 60000;
                 mPersenter.getcode(phone);
                 handler.postDelayed(update_thread, 0);
+
 //                timerUtil.timersStart();
                 break;
             case R.id.tv_submit_quick_login:
