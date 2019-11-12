@@ -1,6 +1,5 @@
 package com.example.medical_dream.contract;
 
-import com.example.medical_dream.bean.login.regiter.RegisterBean;
 import com.example.medical_dream.bean.question.DaysBean;
 import com.example.medical_dream.bean.question.TikuBean;
 

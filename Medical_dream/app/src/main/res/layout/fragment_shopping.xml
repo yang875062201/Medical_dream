@@ -3,24 +3,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-
     tools:context=".ui.fragments.ShoppingFragment">
 
     <RelativeLayout
         android:id="@+id/blue"
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"
-        android:background="@android:color/holo_blue_bright"
+        android:background="#278BFA"
         android:layout_height="@dimen/dp_150"/>
+
+
     <LinearLayout
         android:id="@+id/lin_shopping"
         android:layout_width="match_parent"
         android:layout_height="@dimen/dp_100"
         android:layout_below="@id/blue"
         android:orientation="horizontal"
-        android:background="@android:color/darker_gray"
+        android:background="#F5F5F5"
         >
         <LinearLayout
+            android:id="@+id/linear1"
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -36,28 +38,34 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="全部"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_5"
                 />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/linear2"
+            android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical"
-            android:layout_marginLeft="@dimen/dp_20"
             android:layout_width="wrap_content"
            android:layout_marginTop="@dimen/dp_20"
             android:layout_height="wrap_content">
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/cuotiku"
+                android:src="@drawable/shoucang"
                 />
             <TextView
-                android:layout_marginLeft="@dimen/dp_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="全部"
+                android:text="图书"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_5"
                 />
         </LinearLayout>
         <LinearLayout
+            android:id="@+id/linear3"
+            android:gravity="center"
             android:layout_weight="1"
             android:orientation="vertical"
             android:layout_width="wrap_content"
@@ -67,24 +75,26 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:src="@drawable/cuotiku"
+                android:src="@drawable/yingyu"
                 />
             <TextView
-                android:layout_marginLeft="@dimen/dp_10"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/dp_5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="全部"
+                android:text="视频"
                 />
         </LinearLayout>
     </LinearLayout>
     <ImageView
-        android:layout_width="@dimen/dp_200"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp_70"
-        android:src="@drawable/beijing_shouye"
-        />
+        android:layout_width="@dimen/dp_250"
+        android:layout_height="@dimen/dp_100"
+        android:layout_marginTop="60dp"
+        android:layout_centerHorizontal="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/shopping_2" />
     <FrameLayout
-        android:id="@+id/frameLayout"
+        android:id="@+id/frame"
         android:layout_below="@id/lin_shopping"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
