@@ -7,15 +7,8 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
 
-
-
     </style>
-    <style name="AppTheme.Main" parent="AppTheme">
-        <!-- 隐藏状态栏 -->
-        <item name="android:windowFullscreen">true</item>
-        <!-- 隐藏标题栏 -->
-        <item name="android:windowNoTitle">true</item>
-    </style>
+    <style name="AppTheme.Main" parent="AppTheme"/>
 
 
 
