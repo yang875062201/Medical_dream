@@ -1,0 +1,4 @@
+#Sat Nov 09 11:28:45 CST 2019
+base.0=E\:\\github\\LiHandler\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\out
+path.0=classes.dex
+renamed.0=classes.dex
