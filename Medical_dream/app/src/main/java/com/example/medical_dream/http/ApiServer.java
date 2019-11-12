@@ -88,6 +88,8 @@ public interface ApiServer {
     Observable<CurriculumBean> getCurriculum(@Header("A-uthorization")String header, @Field("type")String type,@Field("p")String p);
 
 
+    @GET("forumsc/type_select")
+    Observable<SchoolTab> getForumSchoolData();
     //Forum
     // tab学校
     @POST("forumsc/type_select")

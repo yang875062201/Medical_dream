@@ -8,6 +8,16 @@
     <color name="colorWhite">#ffffff</color>
     <color name="colorBlack">#000000</color>
 
+    <color name="blue">#55A8DE</color>
+    <color name="black">#000000</color>
+    <color name="gray">#EEEEEE</color>
+    <color name="write">#ffffff</color>
+    <color name="trans">#00ffffff</color>
+    <color name="blues">#55A8DE</color>
+    <color name="grays">#989696</color>
+    <color name="red">#F71902</color>
+    <color name="yellow">#EE9121</color>
+
     <!--分割线-->
     <color name="colorLine">#D3D3D3</color>
     <!--分割线-->
