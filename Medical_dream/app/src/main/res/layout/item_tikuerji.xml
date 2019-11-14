@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/relativeLayout"
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/dp_10"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="@dimen/dp_210"
+        android:layout_height="wrap_content"
+        android:maxLines="1"
+        android:text="第一章"
+        android:textSize="@dimen/sp_20"
+        android:layout_marginLeft="@dimen/dp_10"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:src="@drawable/zhankai_timu"
+        android:layout_width="@dimen/dp_30"
+        android:layout_height="@dimen/dp_30"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dp_10"
+        />
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_toLeftOf="@id/image"
+        android:text="0/20"
+        android:textSize="@dimen/sp_20"
+        android:gravity="center"
+        android:layout_marginRight="@dimen/dp_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,6 +1,7 @@
-package com.example.medical_dream.ui.adapters;
+package com.example.medical_dream.ui.adapters.question;
 
 import android.content.Context;
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -15,7 +16,9 @@ import android.widget.TextView;
 import com.example.medical_dream.R;
 import com.example.medical_dream.bean.question.DaysBean;
 import com.example.medical_dream.bean.question.TikuBean;
+import com.example.medical_dream.ui.activity.question.TikuerjiActivity;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -57,6 +60,15 @@ public class MyQuestionAdapter extends RecyclerView.Adapter {
             MyHolder2 viewHolder2 = (MyHolder2) viewHolder;
             viewHolder2.title.setText(list.get(i-1).getName());
             viewHolder2.desc.setText(list.get(i-1).getJianjie());
+            viewHolder2.rlv__question.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    List<TikuBean.InfoBean.UTypeBean.ZTypeBean> z_type = list.get(i - 1).getZ_type();
+                    Intent intent = new Intent(context, TikuerjiActivity.class);
+                    intent.putExtra("list", (Serializable) z_type);
+                    context.startActivity(intent);
+                }
+            });
         }
 
     }

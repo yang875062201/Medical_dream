@@ -9,6 +9,7 @@ import com.example.medical_dream.bean.login.regiter.LoginBean;
 import com.example.medical_dream.bean.login.regiter.AuthCodeBean;
 import com.example.medical_dream.bean.login.regiter.FindPassBean;
 import com.example.medical_dream.bean.login.regiter.RegisterBean;
+import com.example.medical_dream.bean.question.DaTiBean;
 import com.example.medical_dream.bean.question.DaysBean;
 import com.example.medical_dream.bean.question.TikuBean;
 import com.example.medical_dream.bean.shopping.AllBean;
@@ -59,6 +60,11 @@ public interface ApiServer {
     //https://app.yiyanmeng.com/index.php/
     @GET("Shiti/ti_type_list")
     Observable<TikuBean> getTiku(@Header("A-uthorization")String header);
+    //答题
+    //https://app.yiyanmeng.com/index.php/
+    @POST("shiti/get_ti_bufen_list")
+    @FormUrlEncoded
+    Observable<DaTiBean> getDaTi(@Header("A-uthorization")String header,@Field("ti_id")String ti_id);
 
     //未写
 

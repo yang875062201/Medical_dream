@@ -1,13 +1,9 @@
 package com.example.medical_dream.ui.fragments;
 
 
-import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
 
 import com.example.medical_dream.R;
 import com.example.medical_dream.app.BaseApp;
@@ -17,14 +13,12 @@ import com.example.medical_dream.bean.question.TikuBean;
 import com.example.medical_dream.contract.TikuContract;
 import com.example.medical_dream.http.Logger;
 import com.example.medical_dream.persenter.TikuPresente;
-import com.example.medical_dream.ui.adapters.MyQuestionAdapter;
+import com.example.medical_dream.ui.adapters.question.MyQuestionAdapter;
 
 import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
-import butterknife.ButterKnife;
-import butterknife.Unbinder;
 
 /**
  * A simple {@link Fragment} subclass.

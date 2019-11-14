@@ -1,8 +1,9 @@
 package com.example.medical_dream.bean.question;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class TikuBean {
+public class TikuBean implements Serializable{
 
 
     /**
@@ -64,7 +65,7 @@ public class TikuBean {
             this.u_type = u_type;
         }
 
-        public static class UTypeBean {
+        public static class UTypeBean implements Serializable{
             /**
              * id : 57
              * name : 内科学
@@ -240,7 +241,7 @@ public class TikuBean {
                 this.z_type = z_type;
             }
 
-            public static class ZTypeBean {
+            public static class ZTypeBean implements Serializable {
                 /**
                  * id : 112
                  * name : 第一章  诊断学
